@@ -25,7 +25,11 @@ class Block:
         return h.hexdigest()
 
     def __str__(self):
-        return "Block Hash: " + str(self.hash()) + "\nBlockNo: " + str(self.blockNo) + "\nBlock Data: " + str(self.data) + "\nHashes: " + str(self.nonce) + "\n--------------"
+        return "Block Hash: " + str(self.hash()) + \
+                "\nBlockNo: " + str(self.blockNo) + \
+                "\nBlock Data: " + str(self.data) + \
+                "\nHashes: " + str(self.nonce) + \
+                "\n--------------"
 
 class Blockchain:
 
